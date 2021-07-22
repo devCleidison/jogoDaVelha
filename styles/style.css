@@ -1,0 +1,127 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.players {
+  width: 100px;
+  height: 100px;
+  background-color: beige;
+  display: inline-block;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  position: relative;
+}
+
+.players h3 {
+  position: absolute;
+  font-size: 16px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 35%);
+}
+
+#play1, #play2 {
+  position: relative;
+}
+#play1::after {
+  content: "🛡️";
+  position: absolute;
+  font-size: 40px;
+  line-height: 70px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#play2::after {
+  content: "⚔️";
+  position: absolute;
+  font-size: 40px;
+  line-height: 70px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: beige;
+  border: 1px solid gray;
+  display: inline-block;
+}
+
+.o {
+  position: relative;
+}
+
+.o::after {
+  content: "🛡️";
+  font-size: 50px;
+  line-height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.x {
+  position: relative;
+}
+
+.x::after {
+  content: "⚔️";
+  font-size: 50px;
+  line-height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#restart, .popup input {
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: cornflowerblue;
+  border: 1px solid gray;
+  color: white;
+  cursor: pointer;
+}
+
+.popup {
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#vencedor div::after {
+  font-size: 60px;
+  margin-top: -2%;
+}
+
+.popup input {
+  padding: 10px 30px;
+  position: absolute;
+  bottom: 20px;
+  transform: translate(-50%);
+}
+
+.hiddenPopup {
+  visibility: hidden;
+}
